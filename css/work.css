@@ -65,7 +65,6 @@ caption {
     align-items: center;
 	top: 0;
 	background-color: white;
-	box-shadow: 0px 0px 12px rgb(206 206 206);
 }
 
 #logo {
@@ -96,16 +95,12 @@ caption {
 
 }
 
-.active{
-	border-bottom: 4px solid black;
-}
-
 .top-nav a:hover{
 	color: rgb(71, 71, 71);
 }
 
 .top-nav a:active{
-	border-bottom: 4px solid black;
+	color: #1827DE;
 }
 
 /* Work UX/UI */
@@ -131,10 +126,6 @@ caption {
 
 .galleryList a:hover {
 	color: rgb(71, 71, 71);
-}
-
-a .active{
-	font-weight: 400;
 }
 
 .uxWork {
