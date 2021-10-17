@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+h1 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 78px;
+	font-weight: 100;
+}
+
+h2 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 68px;
+	font-weight: 100;
+}
+
+h3 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 48px;
+	font-weight: 100;
+}
+
+h4 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 34px;
+	font-weight: normal;
+}
+
+h5 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 32px;
+	font-weight: normal;
+}
+
+h6 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 30px;
+	font-weight: normal;
+}
+
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 24px;
+	line-height: 50px;
+}
+
+caption {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 22px;
+	text-align: left;
+}
+
+
+/* Navigation */
+
+.navigation {
+	padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	top: 0;
+	background-color: white;
+	box-shadow: 0px 0px 12px rgb(206 206 206);
+}
+
+#logo {
+	height: 65px;
+	margin-left: 20px;
+}
+
+
+.top-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 25px;
+}
+
+.top-nav ul li{
+	text-decoration: none;
+	color: black;
+	padding: 20px;
+	display: inline;
+}
+
+.top-nav a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+
+}
+
+.active{
+	border-bottom: 4px solid black;
+}
+
+.top-nav a:hover{
+	color: rgb(71, 71, 71);
+}
+
+.top-nav a:active{
+	border-bottom: 4px solid black;
+}
+
+/* Work UX/UI */
+
+.work {
+	padding: 20px;
+}
+
+.galleryList {
+	display: inline-block;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.galleryList a {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 48px;
+	font-weight: 100;
+	padding: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.galleryList a:hover {
+	color: rgb(71, 71, 71);
+}
+
+a .active{
+	font-weight: 400;
+}
+
+.uxWork {
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+		'image1 image1'
+		'image2 image3'
+		'image4 image5'
+	;
+}
+
+.image1 {
+	background-color: #FFDBD6;
+	grid-area: image1;
+	height: 600px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+
+.image1 img {
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image2 {
+	grid-area: image2;
+	height: 400px;
+	background-color: #04C9A5;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.image2 img {
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image3 {
+	grid-area: image3;
+	height: 400px;
+	background-color: #201031;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.image3 img {
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image4 {
+	grid-area: image4;
+	height: 400px;
+	background-color: #FFFBF2;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.image4 img {
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image5 {
+	grid-area: image5;
+	height: 400px;
+	background-color: black;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.image5 img {
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* Footer */
+
+footer {
+	height: 300px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright {
+	margin-left: 80px;
+}
+
+.copyright caption {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 22px;
+	text-align: left;
+	width: 400px;
+}
+
+address {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 22px;
+	padding: 5px;
+}
+
+footer a {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans serif";
+	font-size: 22px;
+	color: black;
+	text-decoration: none;
+}
+
+footer img {
+	height: 20px;
+	padding: 1px;
+}
+
+.email {
+	display: inline-block;
+}
+
+.linkedIn {
+	display: inline-block;
+}
+
+@media only screen and (max-width: 600){
+
+	
+	.uxWork {
+		display: grid;
+		grid-template-rows: 600px 400px 400px 400px 400px;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'image1'
+			'image2'
+			'image3'
+			'image4'
+			'image5'
+		;
+		}
+	}
+}
